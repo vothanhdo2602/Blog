@@ -1,0 +1,36 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="screen">
+			<div class="screen__content">
+				<form class="register">
+					<div class="register__field">
+						<i class="register__icon fas fa-user"></i>
+						<input [(ngModel)]="username" name="password" type="text" class="register__input" placeholder="User name / Email">
+					</div>
+					<div class="register__field">
+						<i class="register__icon fas fa-lock"></i>
+						<input [(ngModel)]="password" name="password" type="password" class="register__input" placeholder="Password">
+					</div>
+					<div class="register__field">
+						<i class="register__icon fas fa-lock"></i>
+						<input [(ngModel)]="repeatPassword" name="repeatPassword" type="password" class="register__input" placeholder="Repeat Password">
+					</div>
+					<button class="button register__submit" (click)="register()">
+						<span class="button__text">Register Now</span>
+						<i class="button__icon fas fa-chevron-right"></i>
+					</button>
+					<button class="button register__submit">
+						<span class="button__text" routerLink="/login">Or Login</span>
+						<i class="button__icon fas fa-chevron-right"></i>
+					</button>					
+				</form>
+			</div>
+			<div class="screen__background">
+				<span class="screen__background__shape screen__background__shape4"></span>
+				<span class="screen__background__shape screen__background__shape3"></span>		
+				<span class="screen__background__shape screen__background__shape2"></span>
+				<span class="screen__background__shape screen__background__shape1"></span>
+			</div>		
+		</div>
+	</div>
+</div>
